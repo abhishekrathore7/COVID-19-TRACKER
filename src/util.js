@@ -37,17 +37,18 @@ export const sortData = (data) => {
 
 export const showDataOnMap = (data, casesType = "cases") =>
   data.map((country) => (
-    <Circle>
-      center = {[country.countryInfo.lat, country.countryInfo.long]}
-      fillOpacity : {0.4}
-      color = {casesTypeColors[casesType].hex}
-      fillColor = {casesTypeColors[casesType].hex}
-      radius=
-      {Math.sqrt(country[casesType]) * casesTypeColors[casesType].multiplier}
-
-      <Popup>
-          <h1>I am a popup</h1>
-      </Popup>
+    <Circle
+      center={[country.countryInfo.lat, country.countryInfo.long]}
+      color={casesTypeColors[casesType].hex}
+      fillColor={casesTypeColors[casesType].hex}
+      fillOpacity={0.4}
+      radius={
+        Math.sqrt(country[casesType]) * casesTypeColors[casesType].multiplier
+      }
+    >
+    <Popup>
+       <h1>I am a POPUP. </h1>
+    </Popup>
     </Circle>
   ));
 
