@@ -8,8 +8,11 @@
 }
 
 .infoBox--selected{
-    border-top: 10px solid coral;
+    border-top: 10px solid coral ;
 
+}
+.infoBox--coral{
+   border-color: coral !important;
 }
 
 .infoBox--red{
@@ -31,8 +34,9 @@
 }
 
 .infoBox__total{
-    color: #6c757d;
+    color: grey;
     font-weight: 700 !important;
-    font-size: 0.8rem !important;
+    font-size: 1rem !important;
     margin-top: 15px !important;
+    
 }
